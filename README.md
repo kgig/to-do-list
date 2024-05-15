@@ -33,8 +33,8 @@
     http://localhost:3000/api/v1/dbms/to-do-list/:id
 ```
 #### example 
-http://localhost:3000/api/v1/dbms/to-do-list/1
-http://localhost:3000/api/v1/dbms/to-do-list/2
+- http://localhost:3000/api/v1/dbms/to-do-list/1
+- http://localhost:3000/api/v1/dbms/to-do-list/2
 
 ### POST to-do-list
 ```bash
