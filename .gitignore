@@ -1,0 +1,16 @@
+*.log
+package-lock.json
+
+logs/
+node_modules/
+dist/
+.vscode/
+.npmrc
+
+appLogPath/
+cPath/
+summaryPath/
+detailPath/
+statPath/
+alarmPath/
+temp/
