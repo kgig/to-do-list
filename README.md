@@ -41,7 +41,17 @@
 ```bash
     http://localhost:3000/api/v1/dbms/to-do-list
 ```
+
 #### example 
+``` {
+    "subject": "Interview",
+    "description": "Interview",
+    "owner": "James",
+    "startDate": "01/03/2024",
+    "endDate": "01/03/2024",
+    "status": "IN PROGRESS",
+    "priority": "high"
+} ```
 
 ### PATCH to-do-list By ID
 ```bash
