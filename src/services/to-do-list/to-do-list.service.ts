@@ -62,7 +62,7 @@ export class ToDoListService {
         }
 
     }
-    
+
     public createToDoList = async (req: Request, res: Response, next: NextFunction) => {
         try {
             const newTask = {
@@ -90,6 +90,16 @@ export class ToDoListService {
                 }
             }
             return resultData
+        } catch (err) {
+            throw err
+        }
+    }
+
+    public deleteToDoList = async (req: Request, res: Response, next: NextFunction) => {
+        try {
+            const { id } = req.params;
+            dataMockUp = dataMockUp.filter(task => task._id !== id);
+            return dataMockUp
         } catch (err) {
             throw err
         }

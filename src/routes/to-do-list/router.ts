@@ -9,4 +9,5 @@ export const RegisterRouter = (router: Router) => {
     router.get('/to-do-list/:id', toDoListCtrl.getToDoListById)
     router.post('/to-do-list', toDoListCtrl.createToDoList)
     router.patch('/to-do-list/:id', toDoListCtrl.updateToDoList)
+    router.delete('/to-do-list/:id', toDoListCtrl.deleteToDoList)
 }

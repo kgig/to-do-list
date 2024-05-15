@@ -119,5 +119,29 @@ export class ToDoListCtrl {
         }
     }
 
+    public deleteToDoList = async (req: Request, res: Response, next: NextFunction) => {
+        try {
+            const result: any = await this.toDoListService.deleteToDoList(req, res, next)
+            if (result) {
+                let resBody: any = {
+                    resultCode: RESPONSE_CODE.OK.RESULT_CODE,
+                    resultDescription: RESPONSE_CODE.OK.DESCRIPTION,
+                    resultMessage: RESPONSE_CODE.OK.RESULT_DESCRIPTION,
+                    resultData: result
+                }
+                return res.status(RESPONSE_CODE.OK.HTTP_STATUS).json(resBody)
+            }
+        } catch (err) {
+            let resBody: any = {
+                resultCode: RESPONSE_CODE.INTERNAL_SERVER_ERROR.RESULT_CODE,
+                resultDescription: RESPONSE_CODE.INTERNAL_SERVER_ERROR.DESCRIPTION,
+                resultMessage: RESPONSE_CODE.INTERNAL_SERVER_ERROR.RESULT_DESCRIPTION,
+                resultData: {}
+            }
+            if (err) return next(err)
+            return res.status(RESPONSE_CODE.INTERNAL_SERVER_ERROR.HTTP_STATUS).json(resBody)
+        }
+    }
+    
 
 }
