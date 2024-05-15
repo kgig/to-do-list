@@ -51,7 +51,8 @@
     "endDate": "01/03/2024",
     "status": "IN PROGRESS",
     "priority": "high"
-} ```
+}
+```
 
 ### PATCH to-do-list By ID
 ```bash
