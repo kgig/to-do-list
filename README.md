@@ -60,3 +60,15 @@
     http://localhost:3000/api/v1/dbms/to-do-list/:id
 ```
 #### example 
+- http://localhost:3000/api/v1/dbms/to-do-list/1
+```
+{
+    "subject": "Coding",
+    "description": "Coding API to do list",
+    "owner": "James",
+    "startDate": "01/01/2024",
+    "endDate": "02/01/2024",
+    "status": "IN PROGRESS",
+    "priority": "high"
+}
+```
