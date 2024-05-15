@@ -19,7 +19,7 @@
 ## API
 - http://localhost:3000/api/v1/dbms/to-do-list for filter data by condition 
 
-## example 
+### example 
 - To filter by subject: http://localhost:3000/api/v1/dbms/to-do-list?subject=Review
 - To filter by owner: http://localhost:3000/api/v1/dbms/to-do-list?owner=James
 - To filter by priority: http://localhost:3000/api/v1/dbms/to-do-list?priority=high
